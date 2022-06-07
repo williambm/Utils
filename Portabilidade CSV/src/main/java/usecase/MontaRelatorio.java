@@ -31,6 +31,7 @@ public class MontaRelatorio {
 
     {
         try {
+            //TODO: Ajustar local do arquivo de entrada quando for usar!!!!
             fileInputStream = new FileInputStream("C:\\Desenvolvimento\\maven_alura\\Portabilidade CSV\\src\\main\\resources\\splunk.csv");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -87,6 +88,7 @@ public class MontaRelatorio {
 
     public void geraCSVFinal(List<Relatorio> relatorios) throws IOException {
 
+        //TODO: Ajustar local do arquivo de saída quando for usar!!!!
         OutputStream fileOutputStream = new FileOutputStream("C:\\Desenvolvimento\\maven_alura\\Portabilidade CSV\\src\\main\\resources\\splunkSaida.csv");
         Writer outputStreamWriter = new OutputStreamWriter(fileOutputStream);
         BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
